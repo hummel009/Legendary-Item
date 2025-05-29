@@ -1,25 +1,15 @@
 <div align = "center">
 
-<br>
-
-![Logo]
-
-<br>
-
 [![Badge License]][License]
 [![Button Curse]][Curse]
 [![Button Rinth]][Rinth]
-
-<br>
-
-</div>
-
-<div align = "center">
 
 Legendary Item mod is a small but useful mod that adds weapons and artifacts from the Lord of the Rings universe to the game.
 Here you will find the Silmarils, the Arkenstone, the Mace of Azog, and much more!
 Each weapon has an additional model that looks incredibly epic when viewed from the first and third person.
 Fight and impress your opponents!
+
+![Logo]
 
 </div>
 
@@ -31,7 +21,7 @@ Fight and impress your opponents!
 
 [Rinth]: https://modrinth.com/mod/legendary-item
 
-[Logo]: appForge/src/main/resources/logo.png
+[Logo]: legendary-item.jpg
 
 [Badge License]: https://img.shields.io/badge/License-GPL_3-0167a0.svg?style=for-the-badge&labelColor=blue
 
