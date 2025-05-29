@@ -16,10 +16,10 @@
 
 <div align = "center">
 
-Мод «Legendary Item» – небольшой, но полезный мод, который добавляет в игру оружие и артефакты из вселенной
-«Властелина колец». Здесь вы найдёте и Сильмарили, и Аркенстон, и булаву Азога, и многое другое! Каждое оружие
-имеет дополнительную модель, которая выглядит невероятно эпично при присмотре от первого и третьего лица. Сражайтесь
-и впечатляйте ваших противников!
+Legendary Item mod is a small but useful mod that adds weapons and artifacts from the Lord of the Rings universe to the game.
+Here you will find the Silmarils, the Arkenstone, the Mace of Azog, and much more!
+Each weapon has an additional model that looks incredibly epic when viewed from the first and third person.
+Fight and impress your opponents!
 
 </div>
 
