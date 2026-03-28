@@ -1,0 +1,36 @@
+package io.github.hummel009.minecraft.legendarium.handler;
+
+import io.github.hummel009.minecraft.legendarium.model.EpicBakedModel;
+import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.util.registry.IRegistry;
+import net.minecraftforge.client.event.ModelBakeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ForgeEventHandler {
+	public static final Map<ModelResourceLocation, ModelResourceLocation> COMPLIANCES = new HashMap<>();
+
+	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
+	@SuppressWarnings("MethodMayBeStatic")
+	public void onModelBake(ModelBakeEvent event) {
+		IRegistry<ModelResourceLocation, IBakedModel> modelRegistry = event.getModelRegistry();
+		for (Map.Entry<ModelResourceLocation, ModelResourceLocation> compliance : COMPLIANCES.entrySet()) {
+			ModelResourceLocation smallModelResourceLocation = compliance.getKey();
+			IBakedModel smallBakedModel = modelRegistry.getObject(smallModelResourceLocation);
+			if (smallBakedModel != null) {
+				ModelResourceLocation largeModelResourceLocation = compliance.getValue();
+				IBakedModel largeBakedModel = modelRegistry.getObject(largeModelResourceLocation);
+				if (largeBakedModel != null) {
+					IBakedModel epicBakedModel = new EpicBakedModel(smallBakedModel, largeBakedModel);
+					modelRegistry.putObject(smallModelResourceLocation, epicBakedModel);
+				}
+			}
+		}
+	}
+}

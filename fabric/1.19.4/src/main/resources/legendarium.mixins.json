@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.github.hummel.legendarium.mixin",
+	"package": "io.github.hummel009.minecraft.legendarium.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ContextAccessor"
