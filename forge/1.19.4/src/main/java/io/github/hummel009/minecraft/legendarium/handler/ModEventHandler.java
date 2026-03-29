@@ -21,7 +21,7 @@ public class ModEventHandler {
 
 	@SubscribeEvent
 	@OnlyIn(Dist.CLIENT)
-	@SuppressWarnings("MethodMayBeStatic")
+	@SuppressWarnings({"MethodMayBeStatic", "removal"})
 	public void onRegisterAdditional(ModelEvent.RegisterAdditional event) {
 		for (var registryObject : Items.REGISTRY.getEntries()) {
 			var itemName = registryObject.get().getDescriptionId().substring("item.legendarium.".length());
